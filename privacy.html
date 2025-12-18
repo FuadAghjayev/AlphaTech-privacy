@@ -13,64 +13,103 @@
     pre{background:#f8f8f8;padding:12px;border-radius:6px;overflow:auto}
     footer{margin-top:28px;color:#666;font-size:14px}
     .meta{color:#666;font-size:14px}
+    .highlight{background:#fff3cd;padding:2px 6px;border-radius:3px}
   </style>
 </head>
 <body>
   <header>
     <h1>Privacy Policy — AlphaTech Plotter</h1>
-    <p class="meta">Last updated: October 10, 2025</p>
+    <p class="meta">Last updated: December 18, 2025</p>
   </header>
-
-  <p class="lead">This Privacy Policy explains how <strong>AlphaTech Plotter</strong> (the “App”) handles information. The App is developed and provided by AlphaTech.</p>
-
+  <p class="lead">This Privacy Policy explains how <strong>AlphaTech Plotter</strong> (the "App") handles information. The App is developed and provided by AlphaTech.</p>
+  
   <section>
     <h2>1. App Purpose</h2>
-    <p>AlphaTech Plotter helps users access a large collection of mobile device screen dimensions across many phone brands and models, and export those layouts to a printer to plan cutting operations. The App runs primarily on-device and is designed for offline usage.</p>
+    <p>AlphaTech Plotter helps users access a large collection of mobile device screen dimensions across many phone brands and models, and export those layouts to a Bluetooth thermal printer for planning cutting operations. The App runs primarily on-device and is designed for offline usage.</p>
   </section>
-
+  
   <section>
-    <h2>2. Information We Do Not Collect</h2>
+    <h2>2. Permissions We Request</h2>
+    <p>The App requests the following permissions to provide core functionality:</p>
+    
+    <h3>2.1 Bluetooth Permissions</h3>
+    <p>The App requires Bluetooth permissions (<code>BLUETOOTH_SCAN</code> and <code>BLUETOOTH_CONNECT</code>) to:</p>
+    <ul>
+      <li>Discover nearby Bluetooth thermal printers</li>
+      <li>Connect to and communicate with Bluetooth printers</li>
+      <li>Send print jobs containing layout dimensions</li>
+    </ul>
+    <p><strong>Important:</strong> We do not use Bluetooth to track your location or collect any personal data.</p>
+    
+    <h3>2.2 Location Permission</h3>
+    <p>The App requests location permission (<code>ACCESS_FINE_LOCATION</code>) <strong>solely to comply with Android's system requirement</strong> for Bluetooth scanning on Android 12 and above. This is a mandatory Android OS requirement and <span class="highlight">we do NOT collect, store, transmit, or use any location data</span>. Your location is never accessed or tracked by our App.</p>
+    
+    <h3>2.3 Internet Permission</h3>
+    <p>Internet permission is included in the manifest but is not actively used for data collection. It may be used for future updates or optional features.</p>
+  </section>
+  
+  <section>
+    <h2>3. Information We Do Not Collect</h2>
     <p>The App does not request, collect, or store personal data from users. Specifically, the following items are <strong>not</strong> collected by the App:</p>
     <ul>
       <li>Full name or personal identifiers</li>
       <li>Email addresses (unless provided via user-initiated contact outside the App)</li>
-      <li>Location data (GPS)</li>
+      <li><strong>Location data (GPS, network location, or any geolocation information)</strong></li>
       <li>Photos, media, or files from your device</li>
       <li>Device identifiers (IMEI, advertising ID, or similar)</li>
+      <li>Bluetooth device information beyond connection purposes</li>
+      <li>Print history or content</li>
     </ul>
   </section>
-
+  
   <section>
-    <h2>3. Printing & System Services</h2>
-    <p>AlphaTech Plotter may invoke your device’s printing functionality to send layout data to a connected printer. Printing is initiated explicitly by the user and handled by the device’s native print framework or a third-party print service installed on the device. The App does not retain a copy of printed content or log print activity.</p>
+    <h2>4. Printing & Bluetooth Communication</h2>
+    <p>AlphaTech Plotter connects to Bluetooth thermal printers to send layout data for printing. All communication happens locally between your device and the printer:</p>
+    <ul>
+      <li>Printing is initiated explicitly by the user</li>
+      <li>Print data is transmitted directly to the connected Bluetooth printer</li>
+      <li>No print content is stored, logged, or transmitted to external servers</li>
+      <li>Bluetooth connections are established only when you choose to print</li>
+    </ul>
   </section>
-
+  
   <section>
-    <h2>4. Third-Party Services</h2>
+    <h2>5. Third-Party Services</h2>
     <p>The App does not transmit user data to third-party analytics, advertising, or tracking services. Because it is designed for on-device use, internet connectivity is not required for core features. If you choose to contact the developer via email, that communication occurs through your email provider and is outside the scope of this policy.</p>
   </section>
-
+  
   <section>
-    <h2>5. Data Security</h2>
-    <p>Since the App does not collect or store personal information, there is no user data stored by AlphaTech Plotter. Any temporary data used for rendering layouts or preparing print jobs remains on the device and is cleared when the App or the print workflow ends.</p>
+    <h2>6. Data Security</h2>
+    <p>Since the App does not collect or store personal information, there is no user data stored by AlphaTech Plotter on our servers. Any temporary data used for rendering layouts or preparing print jobs remains on your device and is cleared when the App or the print workflow ends.</p>
   </section>
-
+  
   <section>
-    <h2>6. Children</h2>
+    <h2>7. Children's Privacy</h2>
     <p>The App is not designed for children under 13 and does not knowingly collect information from children.</p>
   </section>
-
+  
   <section>
-    <h2>7. Changes to This Policy</h2>
+    <h2>8. Your Control</h2>
+    <p>You have full control over the permissions granted to the App:</p>
+    <ul>
+      <li>You can revoke Bluetooth or Location permissions at any time through your device settings</li>
+      <li>Revoking Bluetooth permissions will prevent the App from connecting to printers</li>
+      <li>Revoking Location permission will prevent Bluetooth scanning on Android 12+</li>
+      <li>No data is transmitted or stored even when permissions are granted</li>
+    </ul>
+  </section>
+  
+  <section>
+    <h2>9. Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. When significant changes are made, we will update the date at the top of this page. Continued use of the App after changes constitutes acceptance of the revised policy.</p>
   </section>
-
+  
   <section>
-    <h2>8. Contact</h2>
-    <p>If you have questions about this Privacy Policy or our practices, please contact us at:</p>
+    <h2>10. Contact</h2>
+    <p>If you have questions about this Privacy Policy, our data practices, or permission usage, please contact us at:</p>
     <pre>alphatech383@gmail.com</pre>
   </section>
-
+  
   <footer>
     <p>&copy; 2025 AlphaTech. All rights reserved.</p>
   </footer>
